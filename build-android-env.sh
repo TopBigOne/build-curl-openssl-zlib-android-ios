@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export ANDROID_NDK_ROOT=$HOME/Library/Android/sdk/ndk/23.1.7779620
+export ANDROID_NDK_ROOT=/Users/dev/Documents/Android_Env/Sdk/ndk/23.1.7779620
 
 HOST_TAG=darwin-x86_64
 

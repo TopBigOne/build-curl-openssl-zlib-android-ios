@@ -34,7 +34,7 @@ function build() {
     RANLIB=$TOOLCHAIN/bin/llvm-ranlib
     STRIP=$TOOLCHAIN/bin/llvm-strip
 
-    ./Configure $OPENSSL_ARCH no-unit-test no-shared -D__ANDROID_API__=$MIN_SDK_VERSION --prefix=$INSTALL_DIR/$ANDROID_ARCH
+    ./Configure $OPENSSL_ARCH no-unit-test no-shared -D__ANDROID_API__=$MIN_SDK_VERSION --prefix=$INSTALL_DIR/$ANDROID_ARCH --enable-shared
 
     make -j8
     make install_sw

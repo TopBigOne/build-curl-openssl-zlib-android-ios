@@ -49,7 +49,13 @@ sh build-android-zcurl.sh
 
 
 #or
+
 sh build-android.sh
+```
+
+# test compile
+```shell
+sudo sh build-android.sh
 ```
 
 Build iOS

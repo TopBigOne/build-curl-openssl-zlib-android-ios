@@ -38,7 +38,8 @@ function build() {
                 --prefix=$INSTALL_DIR/$ANDROID_ARCH \
                 --with-zlib=$BUILD_DIR/zlib/$ANDROID_ARCH \
                 --with-openssl=$BUILD_DIR/openssl/$ANDROID_ARCH \
-                --with-pic --disable-shared
+                --with-pic \
+                --enable-shared \
 
     make -j8
     make install
