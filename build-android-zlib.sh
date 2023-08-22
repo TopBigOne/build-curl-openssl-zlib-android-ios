@@ -33,7 +33,10 @@ function build() {
     RANLIB=$TOOLCHAIN/bin/llvm-ranlib
     STRIP=$TOOLCHAIN/bin/llvm-strip
 
-    ./configure --prefix=$INSTALL_DIR/$ANDROID_ARCH --enable-shared
+   echo " zlib Configurating..."
+    ./configure \
+    --prefix=$INSTALL_DIR/$ANDROID_ARCH \
+                --shared \
 
     make -j8
     make install

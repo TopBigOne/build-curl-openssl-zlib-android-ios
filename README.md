@@ -1,4 +1,5 @@
 
+* https://android.googlesource.com/platform/external/zlib.git/+/b5611c4ac00b35b72c298f5ecdaa154167c6dd6d%5E1..b5611c4ac00b35b72c298f5ecdaa154167c6dd6d/
 在mac上用Android NDK编译zlib，openssl，curl。在linux上应该也没问题。
 
 我是用的NDK版本是23.1.7779620
@@ -69,6 +70,7 @@ IOS_MIN_SDK_VERSION=12.0
 
 BUILD_DIR=$PWD/build/ios
 ```
+
 
 ```shell
 #编译openssl
