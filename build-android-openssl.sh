@@ -21,7 +21,7 @@ fi
 tar xzf $ARCHIVE
 
 cd $DIR
-
+# no-shared
 function build() {
     TARGET_HOST=$1
     ANDROID_ARCH=$2
@@ -34,7 +34,7 @@ function build() {
     RANLIB=$TOOLCHAIN/bin/llvm-ranlib
     STRIP=$TOOLCHAIN/bin/llvm-strip
 
-    ./Configure $OPENSSL_ARCH no-unit-test shared -D__ANDROID_API__=$MIN_SDK_VERSION --prefix=$INSTALL_DIR/$ANDROID_ARCH
+    ./Configure $OPENSSL_ARCH no-unit-test no-shared -D__ANDROID_API__=$MIN_SDK_VERSION --prefix=$INSTALL_DIR/$ANDROID_ARCH
 
     make -j8
     make install_sw
@@ -43,10 +43,10 @@ function build() {
 
 build aarch64-linux-android arm64-v8a android-arm64
 build armv7a-linux-androideabi armeabi-v7a android-arm
-build i686-linux-android x86 android-x86
-build x86_64-linux-android x86_64 android-x86_64
+#build i686-linux-android x86 android-x86
+#build x86_64-linux-android x86_64 android-x86_64
 
 
 cd ..
 
-rm -rf $DIR
+#rm -rf $DIR

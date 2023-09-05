@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export ANDROID_NDK_ROOT=/Users/dev/Documents/Android_Env/Sdk/ndk/25.2.9519653
+export ANDROID_NDK_ROOT=/Users/dev/Documents/Android_Env/Sdk/ndk/23.2.8568313
 
 HOST_TAG=darwin-x86_64
 
-MIN_SDK_VERSION=23
+MIN_SDK_VERSION=21
 
 TOOLCHAIN=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/$HOST_TAG
 

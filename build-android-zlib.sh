@@ -2,9 +2,9 @@
 
 source ./build-android-env.sh
 
-ARCHIVE=zlib-1.2.13.tar.gz
+ARCHIVE=zlib-1.3.tar.gz
 
-DIR=$PWD/zlib-1.2.13
+DIR=$PWD/zlib-1.3
 
 INSTALL_DIR=$BUILD_DIR/zlib
 
@@ -36,7 +36,7 @@ function build() {
    echo " zlib Configurating..."
     ./configure \
     --prefix=$INSTALL_DIR/$ANDROID_ARCH \
-                --shared \
+
 
     make -j8
     make install
@@ -50,4 +50,4 @@ build x86_64-linux-android x86_64
 
 cd ..
 
-rm -rf $DIR
+#rm -rf $DIR
